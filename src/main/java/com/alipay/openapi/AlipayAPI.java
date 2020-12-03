@@ -1,10 +1,18 @@
 package com.alipay.openapi;
 
 
-import com.alipay.api.response.*;
-import com.alipay.openapi.entity.*;
-
 public abstract class AlipayAPI {
+    protected final String app_id;
+    protected final String method;
+    protected final String format;
+    protected final String charset;
+    protected final String sign_type;
+    protected final String sign;
+    protected final String timestamp;
+    protected final String version;
+    protected final String app_auth_token;
+
+
     public AlipayAPI(
             String app_id,
             String method,
@@ -15,17 +23,17 @@ public abstract class AlipayAPI {
             String timestamp,
             String version,
             String app_auth_token) {
+        this.app_id=app_id;
+        this.method=method;
+        this.format=format;
+        this.charset=charset;
+        this.sign_type=sign_type;
+        this.sign=sign;
+        this.timestamp=timestamp;
+        this.version=version;
+        this.app_auth_token=app_auth_token;
+
 
     }
-    public abstract AlipaySystemOauthTokenResponse alipay_system_oauth_token(String grant_type, String code, String refresh_token) throws AlipayError;
 
-    public abstract AlipayOpenAppQrcodeCreateResponse alipay_open_app_qrcode_create(String url_param, String query_param, String describe) throws AlipayError;
-
-    public abstract AlipayMerchantItemFileUploadResponse alipay_merchant_item_file_upload(String scene, byte[] file_content) throws AlipayError;
-
-    public abstract AlipayOpenAppMiniTemplatemessageSendResponse alipay_open_mini_content_sync(alipay_open_mini_content_sync_body body) throws AlipayError;
-
-    public abstract AntMerchantExpandShopQueryResponse ant_merchant_expand_shop_query(ant_merchant_expand_shop_query_body body) throws AlipayError;
-
-    public abstract MonitorHeartbeatSynResponse monitor_heartbeat_syn(String biz_content) throws AlipayError;
 }
