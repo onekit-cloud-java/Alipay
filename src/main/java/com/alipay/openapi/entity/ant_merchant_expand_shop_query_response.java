@@ -2,11 +2,11 @@ package com.alipay.openapi.entity;
 
 
 
-public enum ant_merchant_expand_shop_query_response {
-    ;
+public class ant_merchant_expand_shop_query_response {
+
     private String shop_id;
     private business_address business_address;
-    public class business_address{
+    public static class business_address{
         private String city_code;
         private String district_code;
         private String address;
@@ -90,7 +90,7 @@ public enum ant_merchant_expand_shop_query_response {
     private String cert_no;
     private String[] out_door_images;
     private qualifications[] qualifications;
-    public class qualifications{
+    public static class qualifications{
         private String industry_qualification_type;
         private String industry_qualification_image;
 
@@ -119,7 +119,7 @@ public enum ant_merchant_expand_shop_query_response {
     private String license_auth_letter_image;
     private String settle_alipay_logon_id;
     private ext_infos[] ext_infos;
-    public class ext_infos{
+    public static class ext_infos{
         private String key_name;
         private String value;
 
@@ -141,7 +141,7 @@ public enum ant_merchant_expand_shop_query_response {
     }
 
     private business_time[] business_time;
-    public class business_time{
+    public static class business_time{
         private String week_day;
         private String open_time;
         private String close_time;
@@ -172,7 +172,7 @@ public enum ant_merchant_expand_shop_query_response {
     }
 
     private contact_infos[] contact_infos;
-    public class contact_infos{
+    public static class contact_infos{
         private String name;
         private String phone;
         private String mobile;
