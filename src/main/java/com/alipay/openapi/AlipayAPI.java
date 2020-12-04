@@ -2,6 +2,7 @@ package com.alipay.openapi;
 
 
 public abstract class AlipayAPI {
+    protected final String host;
     protected final String app_id;
     protected final String method;
     protected final String format;
@@ -14,6 +15,7 @@ public abstract class AlipayAPI {
 
 
     public AlipayAPI(
+            String host,
             String app_id,
             String method,
             String format,
@@ -23,6 +25,7 @@ public abstract class AlipayAPI {
             String timestamp,
             String version,
             String app_auth_token) {
+        this.host=host;
         this.app_id=app_id;
         this.method=method;
         this.format=format;
