@@ -2,11 +2,9 @@ package com.alipay.openapi;
 
 
 import com.alipay.api.AlipayApiException;
-import com.alipay.api.response.AlipayMerchantItemFileUploadResponse;
-import com.alipay.api.response.AlipayOpenAppMiniTemplatemessageSendResponse;
 import com.alipay.api.response.AlipaySystemOauthTokenResponse;
 import com.alipay.api.response.MonitorHeartbeatSynResponse;
-import com.alipay.openapi.entity.alipay_open_mini_content_sync_body;
+
 
 public abstract class AlipayToolAPI extends AlipayAPI {
 
