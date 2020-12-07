@@ -1,4 +1,4 @@
-package com.alipay.openapi.entity;
+package com.aliyuncs.entity;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -16,7 +16,7 @@ public class ImageSyncScanRequest_body {
     }
     private String bizType;
     private ArrayList<scene> scenes;
-    public class tasks{
+    public static class tasks{
         private String dataId;
         private String url;
         private Date time;
