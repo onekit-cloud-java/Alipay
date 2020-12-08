@@ -2,10 +2,10 @@ package com.aliyuncs.entity;
 
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.HashMap;
+
 
 public class ImageSyncScanRequest_body {
-    public enum scene{
+    public enum Scene{
         porn,
         terrorism,
         ad,
@@ -15,8 +15,8 @@ public class ImageSyncScanRequest_body {
 
     }
     private String bizType;
-    private ArrayList<scene> scenes;
-    public static class tasks{
+    private ArrayList<Scene> scenes;
+    public static class Task{
         private String dataId;
         private String url;
         private Date time;
@@ -63,7 +63,7 @@ public class ImageSyncScanRequest_body {
             this.maxFrames = maxFrames;
         }
     }
-    private HashMap<String,tasks> tasks;
+    private ArrayList<Task> tasks;
 
     public String getBizType() {
         return bizType;
@@ -73,19 +73,19 @@ public class ImageSyncScanRequest_body {
         this.bizType = bizType;
     }
 
-    public ArrayList<scene> getScenes() {
+    public ArrayList<Scene> getScenes() {
         return scenes;
     }
 
-    public void setScenes(ArrayList<scene> scenes) {
+    public void setScenes(ArrayList<Scene> scenes) {
         this.scenes = scenes;
     }
 
-    public HashMap<String, ImageSyncScanRequest_body.tasks> getTasks() {
+    public ArrayList<Task> getTasks() {
         return tasks;
     }
 
-    public void setTasks(HashMap<String, ImageSyncScanRequest_body.tasks> tasks) {
+    public void setTasks(ArrayList<Task> tasks) {
         this.tasks = tasks;
     }
 }
