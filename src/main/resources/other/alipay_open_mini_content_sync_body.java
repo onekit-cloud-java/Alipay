@@ -2,7 +2,7 @@ package com.alipay.openapi.entity;
 
 
 import java.util.Map;
-
+@SuppressWarnings("unused")
 public class alipay_open_mini_content_sync_body {
     private String content_type;
     private String operation;

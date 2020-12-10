@@ -1,7 +1,7 @@
 package com.alipay.openapi;
 
 
-
+@SuppressWarnings("unused")
 public abstract class AlipayEbppAPI extends AlipayAPI {
 
 

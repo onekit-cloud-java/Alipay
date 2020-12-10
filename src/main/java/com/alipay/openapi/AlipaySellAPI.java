@@ -5,7 +5,7 @@ import com.alipay.api.AlipayApiException;
 import com.alipay.api.response.AlipayOpenAppQrcodeCreateResponse;
 import com.alipay.openapi.entity.alipay_open_app_qrcode_create_body;
 
-
+@SuppressWarnings("unused")
 public abstract class AlipaySellAPI extends AlipayAPI {
 
 

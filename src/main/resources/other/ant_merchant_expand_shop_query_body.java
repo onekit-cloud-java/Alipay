@@ -1,5 +1,6 @@
-package com.alipay.openapi.entity;
+package other;
 
+@SuppressWarnings("unused")
 public class ant_merchant_expand_shop_query_body {
     private String shop_id;
     private String store_id;

@@ -4,10 +4,9 @@ package com.alipay.openapi;
 import com.alipay.api.AlipayApiException;
 import com.alipay.api.response.AlipayOpenAppMessageTopicSubscribeResponse;
 import com.alipay.api.response.AlipaySystemOauthTokenResponse;
-import com.alipay.api.response.MonitorHeartbeatSynResponse;
 import com.alipay.openapi.entity.alipay_open_app_message_topic_subscribe_body;
 
-
+@SuppressWarnings("unused")
 public abstract class AlipayToolAPI extends AlipayAPI {
 
 
@@ -17,7 +16,7 @@ public abstract class AlipayToolAPI extends AlipayAPI {
 
     public abstract AlipaySystemOauthTokenResponse alipay_system_oauth_token(String grant_type, String code, String refresh_token) throws AlipayApiException;
 
-    public abstract MonitorHeartbeatSynResponse monitor_heartbeat_syn(String biz_content) throws AlipayApiException;
+    //public abstract MonitorHeartbeatSynResponse monitor_heartbeat_syn(String biz_content) throws AlipayApiException;
 
     public abstract AlipayOpenAppMessageTopicSubscribeResponse alipay_open_app_message_topic_subscribe(alipay_open_app_message_topic_subscribe_body body) throws AlipayApiException;
 

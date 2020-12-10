@@ -3,7 +3,7 @@ package com.aliyuncs.entity;
 import java.util.ArrayList;
 import java.util.Date;
 
-
+@SuppressWarnings("unused")
 public class ImageSyncScanRequest_body {
     public enum Scene{
         porn,

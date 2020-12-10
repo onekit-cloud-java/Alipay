@@ -1,5 +1,5 @@
 package com.alipay.openapi.entity;
-
+@SuppressWarnings("unused")
 public class alipay_open_app_qrcode_create_body {
     private String url_param;
     private String query_param;

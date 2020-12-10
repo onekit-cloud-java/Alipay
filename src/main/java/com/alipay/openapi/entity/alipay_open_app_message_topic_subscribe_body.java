@@ -1,5 +1,6 @@
 package com.alipay.openapi.entity;
 
+@SuppressWarnings("unused")
 public class alipay_open_app_message_topic_subscribe_body {
     private String auth_token;
     private String auth_type;

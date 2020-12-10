@@ -1,10 +1,8 @@
 package com.alipay.openapi;
 
 
-import com.alipay.api.AlipayApiException;
-import com.alipay.api.response.AntMerchantExpandShopQueryResponse;
-import com.alipay.openapi.entity.ant_merchant_expand_shop_query_body;
 
+@SuppressWarnings("unused")
 public abstract class AlipayPayAPI extends AlipayAPI {
 
 
@@ -12,6 +10,6 @@ public abstract class AlipayPayAPI extends AlipayAPI {
         super(host, app_id, method, format, charset, sign_type, sign, timestamp, version, app_auth_token);
     }
 
-    public abstract AntMerchantExpandShopQueryResponse ant_merchant_expand_shop_query(ant_merchant_expand_shop_query_body body) throws AlipayApiException;
+    //public abstract AntMerchantExpandShopQueryResponse ant_merchant_expand_shop_query(ant_merchant_expand_shop_query_body body) throws AlipayApiException;
 
 }
